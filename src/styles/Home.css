@@ -1,0 +1,84 @@
+
+body {
+    font-family:Helvetica; font-size: 15px; background-color: rgba(13, 16, 23, 1); margin:0;
+}
+#blockLogo1A {
+    margin: 10px 0px 10px; display: flex; text-align: center;
+}
+    .buttonImg1A {
+        background-color: rgba(0, 0, 0, 0); border: none; cursor: pointer;
+    }
+        #logo1A {
+            margin: auto; float: left; height: 60px; width: 250px;
+        }
+            .appLogo1A { 
+                margin: auto; float: left;
+            }
+    .blockOut1A {
+        height: 40px; background-color: rgba(02, 07, 13, 1);
+    }    
+        .out1A:hover {
+            background-color: rgba(02, 07, 13, 1); border-bottom: 3px solid rgba(0, 70, 185, 1);
+        }
+.blockOption1A {
+    padding: 0px 0px 0px; display: flex; background-color: rgba(0, 70, 185, 1); height: 40px; border-bottom: 0px solid rgba(255, 255, 255, 1);
+}
+    .optHome1A {
+        margin: auto; float: left; height: 40px; width: 100px; color: rgba(255, 255, 255, 1); background-color: rgba(0, 0, 0, 0); border: none; cursor: pointer;
+    }
+        .optHome1A:hover {
+            background-color: rgba(0, 50, 165, 1); border-bottom: 3px solid rgba(255, 255, 255, 1);
+        }
+.blockMain1A {
+    display: grid; grid-template-columns: 0.3fr 0.7fr; height: 77vh; max-width: 100%; border: 4px solid rgba(13, 16, 23, 1);
+}
+    .blockMenu1A {
+        display: flex; flex-direction: column; min-height: 100%; background-color: rgba(22, 27, 33, 1);
+    }
+        .blockUser1A {
+            margin: 20px auto 60px; background-color: rgba(0, 0, 0, 0);
+        }
+            #blockPhoto1A {
+                text-align: center;
+            }
+                #userPhoto1A {
+                    border-radius: 75%; height: 150px; width: 150px;
+                }   
+            #blockInfo1A {
+                height: 25px; text-align: center; border-bottom: 1px solid rgba(48, 53, 59, 1);
+            }
+                #userName1A {
+                    font-weight: bold; color: rgba(255, 255, 255, 1); 
+                }
+        .blockInput1A {
+            margin: auto auto auto; text-align: center;
+        }
+            .inputs1A {
+                height:28px; width:220px; text-align: center; border-radius: 7px; border: 1px solid rgba(48, 53, 59, 1); background-color: rgba(13, 16, 23, 1); color: rgba(255, 255, 255, 1);
+            }
+        .blockSearch1A {
+            margin: 60px auto 20px; height: 40px; background-color: rgba(02, 07, 13, 1);
+        }    
+            .search1A:hover {
+                background-color: rgba(02, 07, 13, 1); border-bottom: 3px solid rgba(0, 70, 185, 1);
+            }
+    /*.blockMap1A {
+    }*/
+        .map1A {
+            height: 100%;
+        }
+    .blockMap1A {
+        background-color:rgba(255, 255, 255, 1);
+    }
+    .blockMenu1A, .blockMap1A {
+        display: flex; justify-content: center; align-items: center;
+    }
+#blockInfo1A {
+    padding: 23px 0px 24px; margin: auto auto auto; background-color: rgba(22, 27, 33, 1); border-top: 1px solid rgba(48, 53, 59, 1); text-align: center;
+}
+    .optFooter1A {
+        padding: 0px 40px 0px; margin: auto auto auto; color: rgba(255, 255, 255, 1); text-decoration: none;
+    }
+        .optFooter1A:hover {
+            background-color: rgba(255, 255, 255, 0); color: rgba(70, 140, 255, 1);
+        }
