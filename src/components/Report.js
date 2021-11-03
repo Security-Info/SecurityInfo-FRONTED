@@ -6,7 +6,17 @@ import policia from '../Image/Policia.png'
 import '../styles/Report.css';
 import Map from './Map'
 
+import L from 'leaflet';
+import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+import { SomeComponent } from './SomeComponent';
+import { useData } from "../providers/DataProvider";
+
+
+
 function Report() {
+    
+
+
     const changePage = (event) => {
         if(event.target.name==="cerrarSesion"){
             window.location = "/";
@@ -33,6 +43,27 @@ function Report() {
     const handleStart = () => {
         window.location = "/Home";
     }
+
+
+    const provider = new OpenStreetMapProvider();
+
+    const searchControl = new GeoSearchControl({
+    provider: provider,
+    });
+
+    //const map = new L.Map('map');
+    //map.addControl(searchControl);
+
+
+    const onChangeSelect = (event) => {
+        console.log("se selecciono lo siguiente : " +event.target.value)
+    }
+    
+    const onChangeDate = (event) => {
+        console.log("Esta es la fecha : "+ event.target.value)
+    }
+
+
 
     return (
         <div>
@@ -64,14 +95,14 @@ function Report() {
                 </div> 
                 <div class="blockInput2A">
                     <div>
-                        <input type="date" class="inputs2A" id="userInput2A" name="trip-start" value="YYYY-MM-DD" min="2021-01-01" max="2021-12-31" required/>
+                        <input type="date" class="inputs2A" id="userInput2A" name="trip-start" value="YYYY-MM-DD" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required/>
                     </div>
                     <div>
-                        <select name="select" class="inputs2A" required>
+                        <select name="select" class="inputs2A" onChange={onChangeSelect}required>
                             <option value="value1" selected>Tipo de robo...</option>
                             <option value="value2">Arma de Fuego</option>
                             <option value="value3">Arma Blanca</option>
-                            <option value="value4">Sin Armas</option>
+                            <option >Sin Armas</option>
                         </select>
                     </div>
                 </div>
@@ -80,7 +111,8 @@ function Report() {
                 </div>
             </div>
             <div id="blockMap2A">
-                <Map />
+                
+                <SomeComponent />
             </div>
         </div>
         <div class="blockReport2A">
