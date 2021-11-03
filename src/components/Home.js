@@ -2,6 +2,8 @@ import React from 'react'
 import '../styles/Home.css';
 import securityInfo2 from '../Image/SecurityInfo2.png'
 import foto from '../Image/Foto.jpg'
+import Map from './Map';
+
 
 const Home = () => {
     const changePage = (event) => {
@@ -70,6 +72,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div id="blockMap1A">
+                    <Map />
                 </div>
             </div>
             <footer id="blockInfo1A">

@@ -4,6 +4,7 @@ import foto from '../Image/Foto.jpg'
 import fiscalia from '../Image/Fiscalia.png'
 import policia from '../Image/Policia.png'
 import '../styles/Report.css';
+import Map from './Map'
 
 function Report() {
     const changePage = (event) => {
@@ -79,6 +80,7 @@ function Report() {
                 </div>
             </div>
             <div id="blockMap2A">
+                <Map />
             </div>
         </div>
         <div class="blockReport2A">
