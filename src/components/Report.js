@@ -95,15 +95,10 @@ function Report() {
                 </div> 
                 <div class="blockInput2A">
                     <div>
-                        <input type="date" class="inputs2A" id="userInput2A" name="trip-start" value="YYYY-MM-DD" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required/>
+                        <input type="date" class="inputs2A" id="userInput2A" name="userInput2A" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required></input>
                     </div>
                     <div>
-                        <select name="select" class="inputs2A" onChange={onChangeSelect}required>
-                            <option value="value1" selected>Tipo de robo...</option>
-                            <option value="value2">Arma de Fuego</option>
-                            <option value="value3">Arma Blanca</option>
-                            <option >Sin Armas</option>
-                        </select>
+                        <textarea name="inputs2A" rows="10" cols="50" placeholder="Descripción" required></textarea>
                     </div>
                 </div>
                 <div class="blockBtRpt2A">
