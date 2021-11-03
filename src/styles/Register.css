@@ -1,64 +1,64 @@
 body {
     font-family: Helvetica; font-size: 15px; background-color: rgba(13, 16, 23, 1); margin: 0;
 }
-#blockLogo {
+#blockLogo0C {
     margin: 20px 0px 30px; text-align: center;
 }
-    #logo {
+    #logo0C {
         height: 190px; width: 211px;
     }
 
-#blockLogin {
+#blockLogin0C {
     padding: 10px 0px 40px; margin: 20px auto 20px; background-color:rgba(22, 27, 33, 1); height: 380px; width: 280px; border-radius: 7px; border: 1px solid rgba(48, 53, 59, 1);
 }
-    .blockSub  {
+    .blockSub0C {
         margin: 10px 30px 10px;
     }
-        .subtitle {
+        .subtitle0C {
             color:rgba(255, 255, 255, 1);
         }
-    .blockInput {
+    .blockInput0C {
         text-align: center;
     }
-        .inputs {
+        .inputs0C {
             height:28px; width:220px; text-align: center; border-radius: 7px; border: 1px solid rgba(48, 53, 59, 1); background-color: rgba(13, 16, 23, 1); color: rgba(255, 255, 255, 1);
         }
-    .blockMainOpt {
+    .blockMainOpt0C {
         margin: 25px auto 10px; text-align: center;
     }
-    .blockSecOpt {
+    .blockSecOpt0C {
         margin-top: 20px; text-align: center;
     }
-        .optLogin {
+        .optLogin0C {
             height: 28px; width: 225px; cursor: pointer;
         }
-            .login {
+            .login0C {
                 background-color: rgba(0, 70, 185, 0); color: rgba(255, 255, 255, 1); border: none;
             }
-            .forget {
+            .forget0C {
                 color: rgba(70, 140, 255, 1); border: 2px solid rgba(0, 0, 0, 0); text-decoration: none;
             }
-                .login:hover {
+                .login0C:hover {
                     background-color: rgba(02, 07, 13, 1); border-bottom: 3px solid rgba(0, 70, 185, 1)
                 }
-                .forget:hover {
+                .forget0C:hover {
                     background-color: rgba(255, 255, 255, 0); color: rgba(255, 255, 255, 1);
                 }
-#blockCancel {
+#blockCancel0C {
     padding: 0px 0px 0px; margin: 30px auto 30px; background-color:rgba(22, 27, 33, 0); height: 28px; width: 220px; border-radius: 7px; border: 1px solid rgba(48, 53, 59, 0);
 }
-    .cancel {
+    .cancel0C {
         background-color: rgba(0, 70, 185, 0); color: rgba(255, 255, 255, 1); border: none;
     }
-        .cancel:hover {
+        .cancel0C:hover {
             background-color: rgba(02, 07, 13, 1); border-bottom: 3px solid rgba(0, 70, 185, 1);
         }
-#blockInfo {
+#blockInfo0C {
     padding: 23px 0px 24px; margin: auto auto auto; background-color: rgba(22, 27, 33, 1); border-top: 1px solid rgba(48, 53, 59, 1); text-align: center;
 }
-    .optFooter {
+    .optFooter0C {
         padding: 0px 40px 0px; margin: auto auto auto; color: rgba(255, 255, 255, 1); text-decoration: none;
     }
-        .optFooter:hover {
+        .optFooter0C:hover {
             background-color: rgba(255, 255, 255, 0); color: rgba(70, 140, 255, 1);
         } 

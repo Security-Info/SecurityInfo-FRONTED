@@ -7,7 +7,6 @@ import securityInfo from '../Image/SecurityInfo.png'
 
 */
 function Register() {
-    
     const changePage = () =>{
         window.location = "/";
 
@@ -15,59 +14,57 @@ function Register() {
 
     return (
         <div>
-            <div id="blockLogo">
-                <img id="logo" src={securityInfo} alt="Soldado con espada, securityInfo."/>
+            <div id="blockLogo0C">
+                <img id="logo0C" src={securityInfo} alt="Soldado con espada, securityInfo."/>
             </div>
-
-            <div id="blockLogin">
+            <div id="blockLogin0C">
             <form action="/action_page.php">
                 <div>
-                    <div class="blockSub">
-                        <label for="fname" class="subtitle">Nickname</label>
+                    <div class="blockSub0C">
+                        <label for="fname" class="subtitle0C">Nickname</label>
                     </div>
-                    <div class="blockInput">
-                        <input type="text" class="inputs" id="userInput" name="fname" placeholder="" required/>
+                    <div class="blockInput0C">
+                        <input type="text" class="inputs0C" id="userInput0C" name="fname" placeholder="" required/>
                     </div>
-                    <div class="blockSub">
-                        <label for="lname" class="subtitle">Email</label>
+                    <div class="blockSub0C">
+                        <label for="lname" class="subtitle0C">Email</label>
                     </div>
-                    <div class="blockInput">
-                        <input type="email" class="inputs" id="emailInput" name="femail" placeholder="" required/>
+                    <div class="blockInput0C">
+                        <input type="email" class="inputs0C" id="emailInput0C" name="femail" placeholder="" required/>
                     </div>
-                    <div class="blockSub">
-                        <label for="fname" class="subtitle">Télefono</label>
+                    <div class="blockSub0C">
+                        <label for="fname" class="subtitle0C">Télefono</label>
                     </div>
-                    <div class="blockInput">
-                        <input type="text" class="inputs" id="telInput" name="ftel" placeholder="" required/>
+                    <div class="blockInput0C">
+                        <input type="text" class="inputs0C" id="telInput0C" name="ftel" placeholder="" required/>
                     </div>
-                    <div class="blockSub">
-                        <label for="lname" class="subtitle">Contraseña</label>
+                    <div class="blockSub0C">
+                        <label for="lname" class="subtitle0C">Contraseña</label>
                     </div>
-                    <div class="blockInput">
-                        <input type="password" class="inputs" id="passInput" name="fpass" placeholder="" required/>
+                    <div class="blockInput0C">
+                        <input type="password" class="inputs0C" id="passInput0C" name="fpass" placeholder="" required/>
                     </div>
-                    <div class="blockSub">
-                        <label for="lname" class="subtitle">Repetir Contraseña</label>
+                    <div class="blockSub0C">
+                        <label for="lname" class="subtitle0C">Repetir Contraseña</label>
                     </div>
-                    <div class="blockInput">
-                        <input type="password" class="inputs" id="passInputRep" name="fpass" placeholder="" required/>
+                    <div class="blockInput0C">
+                        <input type="password" class="inputs0C" id="passInputRep0C" name="fpass" placeholder="" required/>
                     </div>
                 </div>
                 <div>
-                    <div class="blockMainOpt">
-                        <button type="button" class="optLogin login" onclick="changePage('home')">Registrar</button>
+                    <div class="blockMainOpt0C">
+                        <button type="button" class="optLogin0C login0C" onclick="changePage('home')">Registrar</button>
                     </div>
                 </div>
             </form> 
         </div>
-        <div id="blockCancel">
-            <button type="button" class="optLogin cancel" onClick={changePage}>Cancelar</button>
+        <div id="blockCancel0C">
+            <button type="button" class="optLogin0C cancel0C" onClick={changePage}>Cancelar</button>
         </div>
-        <footer id="blockInfo">
-            <a href="About" class="optFooter">Nosotros</a>
-            <a href="Contact" class="optFooter">Contacto</a>
+        <footer id="blockInfo0C">
+            <a href="About" class="optFooter0C">Nosotros</a>
+            <a href="Contact" class="optFooter0C">Contacto</a>
         </footer>
-            
         </div>
     )
 }

@@ -1,93 +1,93 @@
 body {
     font-family:Helvetica; font-size: 15px; background-color: rgba(13, 16, 23, 1); margin:0;
 }
-#blockLogo0E {
+#blockLogo1E {
     margin: 10px 0px 10px; display: flex; text-align: center;
 }
-    .buttonImg0E {
+    .buttonImg1E {
         background-color: rgba(0, 0, 0, 0); border: none; cursor: pointer;
     }
-        #logo0E {
+        #logo1E {
             margin: auto; float: left; height: 60px; width: 250px;
         }
-            .appLogo0E {
+            .appLogo1E {
                 margin: auto; float: left;
             }
-    .blockOut0E {
+    .blockOut1E {
         height: 40px; background-color: rgba(02, 07, 13, 1);
     }    
-        .out0E:hover {
+        .out1E:hover {
             background-color: rgba(02, 07, 13, 1); border-bottom: 3px solid rgba(0, 70, 185, 1);
         }
-.blockOption0E {
+.blockOption1E {
     padding: 0px 0px 0px; display: flex; background-color: rgba(0, 70, 185, 1); height: 40px; border-bottom: 0px solid rgba(255, 255, 255, 1);
 }
-    .optHome0E {
+    .optHome1E {
         margin: auto; float: left; height: 40px; width: 100px; color: rgba(255, 255, 255, 1); background-color: rgba(0, 0, 0, 0); border: none; cursor: pointer;
     }
-        .optHome0E:hover {
+        .optHome1E:hover {
             background-color: rgba(0, 50, 165, 1); border-bottom: 3px solid rgba(255, 255, 255, 1);
         }
-.blockMain0E {
+.blockMain1E {
     display: grid; grid-template-columns: 0.6fr 0.2fr 0.2fr; height: 77vh; max-width: 100%;
 }
-    .blockUbi0E {
+    .blockUbi1E {
         position: relative; display: flex; flex-direction: column; min-height: 90%; background-color: rgba(33, 36, 43, 1); border-top: 4px solid rgba(13, 16, 23, 1); border-left: 2px solid rgba(13, 16, 23, 1); border-right: 2px solid rgba(13, 16, 23, 1); transition: .5s ease;
     }
-        .blockSub0E {
+        .blockSub1E {
             width: 100%; margin: 20px auto 20px; text-align: center;
         }
-            .subtitle0E {
+            .subtitle1E {
                 font-weight: bold; color:rgba(255, 255, 255, 1);
             }
-        .blockMap0E {
+        .blockMap1E {
             background-color:rgba(255, 255, 255, 0);
         }
-            #map0E {
+            #map1E {
                 width: 90%; height: 300px; border: none; border-radius: 20px; border: 2px solid rgba(0, 50, 165, 1);
             }
-        .blockAddress0E {
+        .blockAddress1E {
             margin: 20px auto 10px; text-align: center; height: 28px;
         }
-            .label0E {
+            .label1E {
                 color: rgb(255, 255, 255, 1);
             }
-                .blockUbi0E:hover {
+                .blockUbi1E:hover {
                     background-color: rgb(0, 65, 157, 1);
                 }
-    .blockEmail0E {
+    .blockEmail1E {
         position: relative; display: flex; flex-direction: column; min-height: 90%; background-color: rgba(43, 46, 53, 1); border-top: 4px solid rgba(13, 16, 23, 1); border-left: 2px solid rgba(13, 16, 23, 1); border-right: 2px solid rgba(13, 16, 23, 1); transition: .5s ease;
     }
-        .blockLogContact0E {            
+        .blockLogContact1E {            
             text-align: center;
         }
-            .logoContact0E {
+            .logoContact1E {
                 height: 156px; width: 156px;
             }
-        .blockInfLbl0E {
+        .blockInfLbl1E {
             margin: 20px auto 10px; text-align: center;
         }
-            .blockEmail0E:hover {
+            .blockEmail1E:hover {
                 background-color: rgb(0, 75, 167, 1);
             }
-    .blockTel0E {
+    .blockTel1E {
         position: relative; display: flex; flex-direction: column; min-height: 90%; background-color: rgba(53, 56, 63, 1); border-top: 4px solid rgba(13, 16, 23, 1); border-left: 2px solid rgba(13, 16, 23, 1); border-right: 4px solid rgba(13, 16, 23, 1); transition: .5s ease;
     }
-            .blockTel0E:hover {
+            .blockTel1E:hover {
                 background-color: rgb(0, 75, 167, 1);
             }
-    .blockUbi0E, .blockEmail0E {
+    .blockUbi1E, .blockEmail1E {
         display: flex; justify-content: center; align-items: center;
     }
-    .blockTel0E {
+    .blockTel1E {
         display: flex; justify-content: center; align-items: center;
     }
-#blockInfo0E {
+#blockInfo1E {
     padding: 23px 0px 24px; margin: 4px auto auto; background-color: rgba(22, 27, 33, 1); border-top: 1px solid rgba(48, 53, 59, 1); text-align: center;
 }
-    .optFooter0E {
+    .optFooter1E {
         padding: 0px 40px 0px; margin: auto auto auto; color: rgba(255, 255, 255, 1); text-decoration: none;
     }
-        .optFooter0E:hover {
+        .optFooter1E:hover {
             background-color: rgba(255, 255, 255, 0); color: rgba(70, 140, 255, 1);
         }

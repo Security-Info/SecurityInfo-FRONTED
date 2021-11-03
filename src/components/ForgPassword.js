@@ -6,7 +6,6 @@ import securityInfo from '../Image/SecurityInfo.png'
     - Boton enviar
     
 */
-
 function ForgPassword() {
     const changePage = () =>{
         window.location = "/";
@@ -14,35 +13,33 @@ function ForgPassword() {
 
     return (
         <div>
-            <div id="blockLogo">
-                <img id="logo" src={securityInfo} alt="Soldado con espada, securityInfo."/>
+            <div id="blockLogo0B">
+                <img id="logo0B" src={securityInfo} alt="Soldado con espada, securityInfo."/>
             </div>
-            <div id="blockSend">
+            <div id="blockSend0B">
 				<form action="/action_page.php">
 					<div>
-						<div class="blockSub">
-							<label for="lname" class="subtitle">Email</label>
+						<div class="blockSub0B">
+							<label for="lname" class="subtitle0B">Email</label>
 						</div>
-						<div class="blockInput">
-							<input type="email" class="inputs" id="emailInput" name="femail" placeholder="" required/>
+						<div class="blockInput0B">
+							<input type="email" class="inputs0B" id="emailInput0B" name="femail" placeholder="" required/>
 						</div>
 					</div>
 					<div>
-						<div class="blockMainOpt">
-							<button type="button" class="optLogin login" onclick="changePage('')">Enviar</button>
+						<div class="blockMainOpt0B">
+							<button type="button" class="optLogin0B login0B" onclick="changePage('')">Enviar</button>
 						</div>
 					</div>
 				</form> 
 			</div>
-            <div id="blockCancel">
-                <button type="button" class="optLogin cancel" onClick={changePage}>Cancelar</button>
+            <div id="blockCancel0B">
+                <button type="button" class="optLogin0B cancel0B" onClick={changePage}>Cancelar</button>
             </div>
-            <footer id="blockInfo">
-                <a href="About.html" class="optFooter">Nosotros</a>
-                <a href="Contact.html" class="optFooter">Contacto</a>
+            <footer id="blockInfo0B">
+                <a href="About.html" class="optFooter0B">Nosotros</a>
+                <a href="Contact.html" class="optFooter0B">Contacto</a>
             </footer>
-
-            
         </div>
     )
 }

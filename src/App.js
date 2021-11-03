@@ -12,8 +12,6 @@ import Register from "./components/Register";
 import Report from "./components/Report";
 import NotFound from "./components/NotFound";
 
-
-
 function App() {
   return (
     <Router>
