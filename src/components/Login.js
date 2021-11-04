@@ -1,20 +1,26 @@
 import React, {useState,useEffect} from 'react'
 import securityInfo from '../Image/SecurityInfo.png'
+import {ApiLookup} from "../providers/DataProvider";
 import '../styles/Login.css';
 import Axios from 'axios';
+import {useHistory} from "react-router-dom";
+import Home from "./Home";
 
 
 
 function Login() {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [correo, setCorreo] = useState('');
+    const [clave, setClave] = useState('');
     const [user, setUser] = useState(null);
+    const history = useHistory()
 
-
-    const BASE_URL = "https://securityinfo-staging.herokuapp.com/securityInfo/auth/user"
+    const baseURL = "https://securityinfo-staging.herokuapp.com/securityInfo/auth/user"
 
     const login = async credentials=> {
-        const { data } = await Axios.post(BASE_URL,credentials);
+        const { data } = await ApiLookup.lookup("POST","securityInfo/auth/user",(data)=> {
+            ApiLookup.setCookie('logToken',data.data.accessToken)
+            history.push("/")
+        },credentials);
         return data
     }
 
@@ -22,14 +28,15 @@ function Login() {
         event.preventDefault()
         try {
             const user = await login({
-                    username,
-                    password
+                    correo,
+                    clave
                 }
             )
             console.log(user)
+            console.log(ApiLookup.getCookie())
             setUser(user)
-            setUsername('')
-            setPassword('')
+            setCorreo('')
+            setClave('')
         }catch (e){
         }
 
@@ -56,18 +63,18 @@ function Login() {
                         <label for="fname" class="subtitle0A">Email</label>
                     </div>
                     <div class="blockInput0A">
-                        <input type="email"  value={username} class="inputs0A" id="userInput0A" name="usuario" placeholder="" onChange={({target}) => setUsername(target.value)} required/>
+                        <input type="email"  value={correo} class="inputs0A" id="userInput0A" name="usuario" placeholder="" onChange={({target}) => setCorreo(target.value)} required/>
                     </div>
                     <div class="blockSub0A">
                         <label for="lname" class="subtitle0A">Contraseña</label>
                     </div>
                     <div class="blockInput0A">
-                        <input type="password" value={password} class="inputs0A" id="passInput0A" name="password" placeholder="" onChange={({target}) => setPassword(target.value)} required/>
+                        <input type="password" value={clave} class="inputs0A" id="passInput0A" name="password" placeholder="" onChange={({target}) => setClave(target.value)} required/>
                     </div>
                 </div>
                 <div>
                     <div class="blockMainOpt0A">
-                        <button type="submit" class="optLogin0A login0A" name="home"  >Ingresar</button>
+                        <button type="submit" class="optLogin0A login0A" name="home"   >Ingresar</button>
                     </div>
                     <div class="blockSecOpt0A">
                         <a href="ForwardPassword" class="optLogin0A forget0A">Olvidaste tu contraseña?</a>
