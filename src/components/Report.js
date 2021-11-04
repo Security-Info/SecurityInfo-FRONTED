@@ -1,20 +1,32 @@
-import React from 'react'
+import React, {useContext, useState} from 'react'
 import securityInfo2 from '../Image/SecurityInfo2.png'
 import foto from '../Image/Foto.jpg'
 import fiscalia from '../Image/Fiscalia.png'
 import policia from '../Image/Policia.png'
 import '../styles/Report.css';
 import Map from './Map'
-
+import UserService from '../service/UserService';
 import L from 'leaflet';
 import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
 import { SomeComponent } from './SomeComponent';
-import { useData } from "../providers/DataProvider";
+import { DataContext } from '../providers/DataProvider';
 
 
 
 function Report() {
+
+    const { datos, setDatos } = useContext(DataContext)
+    const [textId, setTextId] = useState(datos.id);
+    const [textDate, setTextDate] = useState(datos.fecha);
+    const [textLat, setTextLat] = useState(datos.latitud);
+    const [textLng, setTextLng] = useState(datos.longitud);
+    const [textDesc, setTextDesc] = useState(datos.descripcion);
+
     
+
+
+            
+            
 
 
     const changePage = (event) => {
@@ -45,25 +57,60 @@ function Report() {
     }
 
 
-    const provider = new OpenStreetMapProvider();
-
-    const searchControl = new GeoSearchControl({
-    provider: provider,
-    });
-
-    //const map = new L.Map('map');
-    //map.addControl(searchControl);
-
-
     const onChangeSelect = (event) => {
-        console.log("se selecciono lo siguiente : " +event.target.value)
+        setTextDesc(event.target.value)
+        const temp2 = {
+            id : textId,
+            fecha: textDate,
+            latitud:textLat,
+            longitud: textLng,
+            descripcion:event.target.value,
+            }
+
+        setDatos(temp2)
+
+        
     }
     
     const onChangeDate = (event) => {
-        console.log("Esta es la fecha : "+ event.target.value)
+        
+        
+        
+        setTextDate(event.target.value)
+        const temp = {
+                id : "1",
+                fecha: event.target.value,
+                latitud:textLat,
+                longitud: textLng,
+                descripcion:textDesc,
+                }
+        setDatos(temp)
+        
+        
+        
+        
     }
 
 
+    const onReport = () => {
+        alert("Se envio satisfactoriamente")
+        if(datos.longitud != 0 && datos.latitud !=0){
+            alert("entra!!")
+            UserService.addStole(datos)
+
+        }
+        
+
+    }
+    
+
+
+    console.log("el objeto id: "+ datos.id)
+    console.log("el objeto fecha: "+ datos.fecha)
+    console.log("el objeto lat: "+ datos.latitud)
+    console.log("el objeto lng: "+ datos.longitud)
+    console.log("el objeto desc: "+ datos.descripcion)
+    
 
     return (
         <div>
@@ -95,19 +142,14 @@ function Report() {
                 </div> 
                 <div class="blockInput2A">
                     <div>
-                        <input type="date" class="inputs2A" id="userInput2A" name="trip-start" value="YYYY-MM-DD" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required/>
+                        <input type="date" class="inputs2A" id="userInput2A" name="userInput2A" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required></input>
                     </div>
                     <div>
-                        <select name="select" class="inputs2A" onChange={onChangeSelect}required>
-                            <option value="value1" selected>Tipo de robo...</option>
-                            <option value="value2">Arma de Fuego</option>
-                            <option value="value3">Arma Blanca</option>
-                            <option >Sin Armas</option>
-                        </select>
+                        <textarea name="inputs2A" rows="10" cols="50" placeholder="Descripción" onChange={onChangeSelect} required></textarea>
                     </div>
                 </div>
                 <div class="blockBtRpt2A">
-                    <button type="button" class="optHome2A rpt2A" onClick="">Reportar Robo</button>
+                    <button type="button" class="optHome2A rpt2A" onClick={onReport}>Reportar Robo</button>
                 </div>
             </div>
             <div id="blockMap2A">

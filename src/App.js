@@ -11,9 +11,12 @@ import Profile from "./components/Profile";
 import Register from "./components/Register";
 import Report from "./components/Report";
 import NotFound from "./components/NotFound";
+import { DataProvider } from "./providers/DataProvider";
+
 
 function App() {
   return (
+    <DataProvider>
     <Router>
       <Switch>
         <Route path="/" exact>
@@ -51,6 +54,8 @@ function App() {
         </Route>
       </Switch>
     </Router>
+
+    </DataProvider>
   );
 }
 
