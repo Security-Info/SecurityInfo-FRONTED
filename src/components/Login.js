@@ -11,7 +11,7 @@ function Login() {
     const [user, setUser] = useState(null);
 
 
-    const BASE_URL = "http://localhost:8080/securityInfo/auth/user"
+    const BASE_URL = "https://securityinfo-staging.herokuapp.com/securityInfo/auth/user"
 
     const login = async credentials=> {
         const { data } = await Axios.post(BASE_URL,credentials);
