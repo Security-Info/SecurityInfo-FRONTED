@@ -145,11 +145,11 @@ function Report() {
                         <input type="date" class="inputs2A" id="userInput2A" name="userInput2A" min="2021-01-01" max="2021-12-31" onChange={onChangeDate} required></input>
                     </div>
                     <div>
-<<<<<<< HEAD
+
                         <textarea name="inputs2A" rows="10" cols="50" placeholder="Descripción" onChange={onChangeSelect} required></textarea>
-=======
+
                         <textarea name="inputs2A" rows="10" cols="50" placeholder="Descripción" required></textarea>
->>>>>>> 6a1afaa2fbecc805ae0ed937b384f67071223156
+
                     </div>
                 </div>
                 <div class="blockBtRpt2A">
