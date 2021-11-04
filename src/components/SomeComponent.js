@@ -77,6 +77,7 @@ export const SomeComponent = () => {
     
 
     UserService.getUsers().then(console.log)
+    UserService.getZonas().then(console.log)
     
     //UserService.addStole(JsonPrueba)
 
