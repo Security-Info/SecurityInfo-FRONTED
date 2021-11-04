@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import axios from "axios";
 
-export const DataContext = createContext();
+export const DataContext = createContext({});
 
 const stole = 
   
@@ -13,19 +13,11 @@ const stole =
     descripcion:"dudu"
     }
 
-
-  
-
-
-
-
 export const DataProvider = ({ children }) => {
   const [datos, setDatos] = useState(stole);
-
-
   return <DataContext.Provider value={{datos,setDatos}}>{children}</DataContext.Provider>;
-
 };
+
 
 
 export class ApiLookup{
@@ -69,7 +61,7 @@ export class ApiLookup{
             data:data
         }).then((data)=>callback(data)).catch((error)=>(console.log(error)))
 
-        axios.defaults.headers.common['Authorization'] = "Bearer "+this.getCookie('logToken');
+            axios.defaults.headers.common['Authorization'] = "Bearer "+this.getCookie('logToken');
     }
-}
 
+}

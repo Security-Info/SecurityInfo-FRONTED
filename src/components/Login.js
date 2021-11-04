@@ -3,7 +3,7 @@ import securityInfo from '../Image/SecurityInfo.png'
 import {ApiLookup} from "../providers/DataProvider";
 import '../styles/Login.css';
 import Axios from 'axios';
-import {useHistory} from "react-router-dom";
+import {Redirect, useHistory} from "react-router-dom";
 import Home from "./Home";
 
 
@@ -12,7 +12,10 @@ function Login() {
     const [correo, setCorreo] = useState('');
     const [clave, setClave] = useState('');
     const [user, setUser] = useState(null);
+    const [token, setToken] = useState('');
     const history = useHistory()
+    const [redirect,setRedirect] = useState(false);
+
 
     const baseURL = "https://securityinfo-staging.herokuapp.com/securityInfo/auth/user"
 
@@ -21,6 +24,7 @@ function Login() {
             ApiLookup.setCookie('logToken',data.data.accessToken)
             history.push("/")
         },credentials);
+        console.log(data)
         return data
     }
 
@@ -32,16 +36,16 @@ function Login() {
                     clave
                 }
             )
-            console.log(user)
-            console.log(ApiLookup.getCookie())
             setUser(user)
             setCorreo('')
             setClave('')
         }catch (e){
         }
-
+        setRedirect(true)
     }
-
+    if (redirect){
+        return <Redirect to="/Home" />
+    }
     const changePage = (event) => {
         if(event.target.name==="home"){
             window.location = "/Home";
