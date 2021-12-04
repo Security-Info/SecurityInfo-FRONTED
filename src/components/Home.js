@@ -61,7 +61,7 @@ const Home = () => {
                             </button>
                         </div>
                         <div id="blockInfo1A">
-                            <label id="userName1A">User Name</label>
+                            <label id="userName1A">James Torres Segura</label>
                         </div>
                     </div>
                     <div class="blockInput1A">
