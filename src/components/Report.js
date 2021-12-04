@@ -136,7 +136,7 @@ function Report() {
                         </button>
                     </div>
                     <div id="blockInfo2A">
-                        <label id="userName2A">User Name</label>
+                        <label id="userName2A">James Torres Segura</label>
                     </div>
                 </div> 
                 <div class="blockInput2A">
