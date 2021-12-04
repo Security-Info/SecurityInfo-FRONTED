@@ -50,7 +50,7 @@ function Profile() {
                             </button>
                         </div>
                         <div id="blockName3A">
-                            <label id="userName3A">User Name</label>
+                            <label id="userName3A">James Torres Segura</label>
                         </div>
                     </div>
                     <div class="blockTitle3A">
@@ -65,7 +65,7 @@ function Profile() {
                                             <label for="fname" class="subtitle3A">Email</label>
                                         </div>
                                         <div class="blockInput3A">
-                                            <input type="email" class="inputs3A" id="userInput3A" pattern=".+@globex\.com" size="30" required value="correo@gmail.com"/>
+                                            <input type="email" class="inputs3A" id="userInput3A" pattern=".+@globex\.com" size="30" required value="james1999torres@gmail.com"/>
                                         </div>
                                     </div>
                                     <div class="blockInfo3A tel3A">
@@ -73,7 +73,7 @@ function Profile() {
                                             <label for="lname" class="subtitle3A">Teléfono</label>
                                         </div>
                                         <div class="blockInput3A">
-                                            <input type="text" class="inputs3A" id="userInput3A" name="fname" placeholder="" value="Number User"></input>
+                                            <input type="text" class="inputs3A" id="userInput3A" name="fname" placeholder="" value="3208776212"></input>
                                         </div>
                                     </div>
                                 </div>
