@@ -1,11 +1,17 @@
-import React from 'react'
+import React,{ useState, useEffect} from 'react'
 import '../styles/Home.css';
 import securityInfo2 from '../Image/SecurityInfo2.png'
 import foto from '../Image/Foto.jpg'
 import Map from './Map';
+import UserService from '../service/UserService';
 
 
 const Home = () => {
+
+    
+
+
+    
     const changePage = (event) => {
         if(event.target.name==="name"){
             window.location = "/Home";
@@ -28,13 +34,18 @@ const Home = () => {
         if(event.target.name==="profile"){
             window.location = "/Profile";
           }
-    } 
+    }
     const handleBack = () => {
         window.location = "/Profile";
     }
     const handleStart = () => {
         window.location = "/Home";
     }
+
+
+
+
+//    console.log(stoleAllMap);
 
     return (
         <div>
@@ -77,7 +88,7 @@ const Home = () => {
             </div>
             <footer id="blockInfo1A">
                 <a href="AboutUser" class="optFooter1A">Nosotros</a>
-                <a href="ContactUser" class="optFooter1A">Contacto</a> 
+                <a href="ContactUser" class="optFooter1A">Contacto</a>
             </footer>
         </div>
     )

@@ -1,7 +1,12 @@
 import React, { createContext, useState } from "react";
 import axios from "axios";
+import UserService from "../service/UserService";
 
 export const DataContext = createContext({});
+
+
+
+
 
 const stole = 
   
@@ -12,6 +17,9 @@ const stole =
     longitud:0,
     descripcion:"dudu"
     }
+
+
+
 
 export const DataProvider = ({ children }) => {
   const [datos, setDatos] = useState(stole);
