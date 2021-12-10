@@ -1,4 +1,4 @@
-# Getting Started with Create React App security info
+# Getting Started with Create React App security info.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
